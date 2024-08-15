@@ -4661,3 +4661,20 @@ img.u-pull-left {
         width  : var(--vspace-1_5);
     }
 }
+
+    .whatsapp-icon{
+            position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 28px;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
