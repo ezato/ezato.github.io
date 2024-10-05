@@ -818,9 +818,9 @@
                     <span class="line">Drop us a line at <a href="mailto:#0" title="">ezatotech@gmail.com</a></span>
                 </h2>
             </div> -->
-            
-            
-            
+
+
+
             <div class="column lg-6 stack-on-1100 section-header__secondary">
 
                 <div class="contact-block">
@@ -954,7 +954,7 @@
 
     </footer> <!-- end footer -->
 
-
+    <div class="mouse-pointer"></div>
     <!-- Java Script
     ================================================== -->
     <script src="js/plugins.js"></script>
@@ -1010,7 +1010,15 @@
         });
 
     </script>
+    <script>
+        const mousePointer = document.querySelector(".mouse-pointer");
 
+document.addEventListener("mousemove", (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+  mousePointer.style.transform = `translate(${x}px, ${y}px)`;
+});
+    </script>
 
 </body>
 

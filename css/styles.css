@@ -3502,11 +3502,14 @@ img.u-pull-left {
 @keyframes revealLine {
     0% {
         opacity: 0;
-        transform: translateY(20px); /* Start slightly below */
+        transform: translateY(20px);
+        /* Start slightly below */
     }
+
     100% {
         opacity: 1;
-        transform: translateY(0); /* Move to original position */
+        transform: translateY(0);
+        /* Move to original position */
     }
 }
 
@@ -3519,15 +3522,18 @@ img.u-pull-left {
 }
 
 .s-intro__content-title .line-1 {
-    animation-delay: 0.5s; /* First line starts after 0.5s */
+    animation-delay: 0.5s;
+    /* First line starts after 0.5s */
 }
 
 .s-intro__content-title .line-2 {
-    animation-delay: 1.0s; /* Second line starts after 1s */
+    animation-delay: 1.0s;
+    /* Second line starts after 1s */
 }
 
 .s-intro__content-title .line-3 {
-    animation-delay: 1.5s; /* Third line starts after 1.5s */
+    animation-delay: 1.5s;
+    /* Third line starts after 1.5s */
 }
 
 /* Title text styling */
@@ -3556,16 +3562,20 @@ img.u-pull-left {
     top: 0;
     left: 4px;
     transform: scaleX(0);
-    animation: underlineAnimation 0.75s ease-in-out 2s forwards; /* delay to sync with title animation */
+    animation: underlineAnimation 0.75s ease-in-out 2s forwards;
+    /* delay to sync with title animation */
 }
 
 /* Animation for the underline */
 @keyframes underlineAnimation {
     0% {
-        transform: scaleX(0);  /* Start as invisible */
+        transform: scaleX(0);
+        /* Start as invisible */
     }
+
     100% {
-        transform: scaleX(1);  /* Scale to full width */
+        transform: scaleX(1);
+        /* Scale to full width */
     }
 }
 
@@ -3906,20 +3916,26 @@ img.u-pull-left {
 }
 
 /* General transition setup for fade-up and sliding */
-.fade-up, .animated-item {
+.fade-up,
+.animated-item {
     opacity: 0;
-    transform: scale(0.8); /* Initial zoom out effect */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+    transform: scale(0.8);
+    /* Initial zoom out effect */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    /* Smooth transition */
 }
 
 /* Triggered when the element enters the viewport (after scroll) */
-.is-visible.fade-up, .is-visible.animated-item {
+.is-visible.fade-up,
+.is-visible.animated-item {
     opacity: 1;
-    transform: scale(1); /* Zoom to normal size */
+    transform: scale(1);
+    /* Zoom to normal size */
 }
 
 /* Optional styling */
-.fade-up, .animated-item {
+.fade-up,
+.animated-item {
     margin: 20px 0;
 }
 
@@ -4021,14 +4037,18 @@ img.u-pull-left {
     vertical-align: bottom;
     transition: all 0.3s ease-in-out;
     margin: 0;
-    transform: scale(0.8); /* Initial small size */
-    opacity: 0.6; /* Initially, the images are faded */
+    transform: scale(0.8);
+    /* Initial small size */
+    opacity: 0.6;
+    /* Initially, the images are faded */
 }
 
 /* When the 'zoom-in' class is added */
 .bricks-wrapper .entry__link img.zoom-in {
-    transform: scale(1); /* Full size */
-    opacity: 1; /* Full opacity */
+    transform: scale(1);
+    /* Full size */
+    opacity: 1;
+    /* Full opacity */
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
@@ -4808,17 +4828,25 @@ img.u-pull-left {
     z-index: 1000;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    animation: bounce 2s infinite; /* Add bounce animation */
+    animation: bounce 2s infinite;
+    /* Add bounce animation */
 }
 
 /* Keyframes for bounce effect */
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-20px);
     }
+
     60% {
         transform: translateY(-10px);
     }
@@ -4831,31 +4859,42 @@ img.u-pull-left {
     font-weight: 500;
     line-height: 1.5;
     margin-top: 0;
-    display: block; /* Ensure it behaves as a block-level element */
-    overflow: hidden; /* Hide overflowing text */
+    display: block;
+    /* Ensure it behaves as a block-level element */
+    overflow: hidden;
+    /* Hide overflowing text */
 }
 
 /* Each line inside the text */
 .text-display-1 .line {
-    display: block; /* Make each span a block-level element (on a new line) */
-    white-space: nowrap; /* Prevent each line from wrapping */
-    overflow: hidden; /* Hide text that hasn’t appeared yet */
-    border-right: 0.15em solid #333; /* Add the typing cursor */
-    padding-right: 10px; /* Space for the cursor */
-    animation: typing 5s steps(50) 1s forwards, blink 0.75s step-end infinite; /* Typing and blinking animation */
+    display: block;
+    /* Make each span a block-level element (on a new line) */
+    white-space: nowrap;
+    /* Prevent each line from wrapping */
+    overflow: hidden;
+    /* Hide text that hasn’t appeared yet */
+    border-right: 0.15em solid #333;
+    /* Add the typing cursor */
+    padding-right: 10px;
+    /* Space for the cursor */
+    animation: typing 5s steps(50) 1s forwards, blink 0.75s step-end infinite;
+    /* Typing and blinking animation */
 }
 
 /* Apply animation to each line */
 .text-display-1 .line:nth-child(1) {
-    animation-delay: 0s; /* First line starts immediately */
+    animation-delay: 0s;
+    /* First line starts immediately */
 }
 
 .text-display-1 .line:nth-child(2) {
-    animation-delay: 6s; /* Second line starts after the first line finishes (change based on speed) */
+    animation-delay: 6s;
+    /* Second line starts after the first line finishes (change based on speed) */
 }
 
 .text-display-1 .line:nth-child(3) {
-    animation-delay: 12s; /* Third line starts after the second line finishes */
+    animation-delay: 12s;
+    /* Third line starts after the second line finishes */
 }
 
 /* Typing effect for each line */
@@ -4863,6 +4902,7 @@ img.u-pull-left {
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
@@ -4877,6 +4917,6 @@ img.u-pull-left {
 
 
 
-
-
-
+body {
+    cursor: url('../images/icons/cursor.png'), auto;
+}
