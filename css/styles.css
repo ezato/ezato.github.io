@@ -3448,7 +3448,7 @@ img.u-pull-left {
 
 .s-intro__content-bg {
     display: block;
-    background-image: url(../images/man.png);
+    background-image: url(../images/man.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -4830,8 +4830,8 @@ img.u-pull-left {
 
 .whatsapp-icon {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 110px;
+    right: 25px;
     background-color: #1bf36a;
     color: white;
     width: 60px;
@@ -4980,6 +4980,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 210px;
+    padding-top: 5px;
 }
 
 .single_project img {
